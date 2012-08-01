@@ -6,7 +6,7 @@
 				Talker.getMessageBox().val($(matches[matches.length - pos]).text());
 			}
 
-			var matches = $('#log tr[author=alecgorge]').find('.line');
+			var matches = $('#log tr[author='+Talker.currentUser.name+']').find('.line');
 			if(e.which == 38) { // up
 				if(pos + 1 <= matches.length) {
 					pos++; t();
